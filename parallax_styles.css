@@ -1,0 +1,508 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+	background-color: #CCCCCC;
+}
+
+.wrapper {
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	perspective: 400px;
+}
+
+.element {
+	color: white;
+	height: 100vh;
+	margin-left: 30px;
+}
+
+h1 {
+	font-size: 60pt;
+}
+
+.group {
+	height: 400vh;
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+.backdrop {
+	height: 200vh;
+	width: 100vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.backdrop, .element {
+    position: absolute;
+    inset: 0;
+    top: 1px;
+}
+
+.element h1 {
+	float: left;
+}
+
+/*scale calculation:
+1 + ((Z transform value * -1) / perspective)
+*/
+#back_1 {
+	background-image: url("polaroid_bg1.png");
+	transform: translateZ(-4000px) scale(11);
+}
+#back_2 {
+	background-image: url("photographers_bg2.png");
+	transform: translateZ(-4000px) scale(11);
+}
+#back_3 {
+	background-image: url("night_bg3.png");
+	transform: translateZ(-4000px) scale(11);
+}
+#back_4 {
+	background-image: url("polaroid_bg4.png");
+	transform: translateZ(-4000px) scale(11);
+}
+
+/*first image*/
+#text_1 {
+	margin-top: 25vh;
+}
+#text_2 {
+    margin-top: 1400px;
+}
+#text_3 {
+	margin-top: 375vh;
+}
+#text_4 {
+	margin-top: 550vh;
+}
+/*second image*/
+#text_5 {
+	margin-top: -400vh;
+	color: black;
+}
+#text_6 {
+	margin-top: -75vh;
+	color: black;
+}
+#text_7 {
+	margin-top: 250vh;
+	color: black;
+}
+#text_8 {
+	margin-top: 575vh;
+	color: black;
+}
+/*third image*/
+#text_9 {
+	margin-top: -400vh;
+}
+#text_10 {
+	margin-top: -75vh;
+}
+#text_11 {
+	margin-top: 250vh;
+}
+#text_12 {
+	margin-top: 575vh;
+}
+/*fourth image*/
+#text_13 {
+	margin-top: -400vh;
+}
+#text_14 {
+	margin-top: -195vh;
+}
+#text_15 {
+	margin-top: 10vh;
+}
+#text_16 {
+	margin-top: 200vh;
+}
+#text_17 {
+	margin-top: 575vh;
+}
+
+#group_2, #group_3, #group_4 {
+	margin-top: 1800vh;
+}
+
+/*GROUP 2 - A FLEETING MOMENT*/
+#g1_t2_1 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: 9vw;
+}
+#g1_t2_2 {
+	transform: translateZ(110px) scale(0.725);
+	margin-left: 3vw;
+}
+#g1_t2_3 {
+	transform: translateZ(95px) scale(0.7625);
+	margin-left: -4vw;
+}
+/*CAUGHT IN A FRAME*/
+#g1_t2-2_1 {
+	transform: translateZ(55px) scale(0.8625);
+	margin-left: 6vw;
+	margin-top: -5vh;
+}
+#g1_t2-2_2 {
+	transform: translateZ(110px) scale(0.725);
+	margin-left: 4.5vw;
+	margin-top: -5vh;
+}
+#g1_t2-2_3 {
+	transform: translateZ(95px) scale(0.7625);
+	margin-left: 0vw;
+	margin-top: -5vh;
+}
+#g1_t2-2_4 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: -1vw;
+	margin-top: -5vh;
+}
+/*OR THE MEMORY OF A LIFETIME*/
+#g1_t3_1 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 11vw;
+}
+#g1_t3_2 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: -2vw;
+}
+#g1_t3_3 {
+	transform: translateZ(110px) scale(0.725);
+	margin-left: 2vw;
+}
+#g1_t3_4 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: -2vw;
+}
+#g1_t3_5 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 1vw;
+}
+#g1_t3_6 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: -1vw;
+}
+/*NEVER TO BE LOST*/
+#g1_t4_1 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: 8vw;
+}
+#g1_t4_2 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 2.5vw;
+}
+#g1_t4_3 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 1vw;
+}
+#g1_t4_4 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: -1vw;
+}
+
+/*GROUP 3 - IS THIS WHAT A PHOTO IS*/
+#g2_t5_1 {
+	transform: translateZ(110px) scale(0.725);
+	margin-left: 13vw;
+}
+#g2_t5_2 {
+	transform: translateZ(75px) scale(0.8125);
+	margin-left: -3vw;
+}
+#g2_t5_3 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 1vw;
+}
+#g2_t5_4 {
+	transform: translateZ(60px) scale(0.85);
+	margin-left: -2vw;
+}
+#g2_t5_5 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 1vw;
+}
+#g2_t5_6 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: -1vw;
+}
+/*OR SOMETHING LESS TAUGHT*/
+#g2_t6_1 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: 8vw;
+}
+#g2_t6_2 {
+	transform: translateZ(110px) scale(0.725);
+	margin-left: 2vw;
+}
+#g2_t6_3 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: -4vw;
+}
+#g2_t6_4 {
+	transform: translateZ(95px) scale(0.7625);
+	margin-left: -1vw;
+}
+/*LET US FIND OUT*/
+#g2_t7_1 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 12vw;
+}
+#g2_t7_2 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: -1vw;
+}
+#g2_t7_3 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: -1.5vw;
+}
+#g2_t7_4 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: 0vw;
+}
+/*AT THE PLACE IT ALL STARTS*/
+#g2_t8_1 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: 9vw;
+}
+#g2_t8_2 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: -1vw;
+}
+#g2_t8_3 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 2.5vw;
+}
+#g2_t8_4 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: -2vw;
+}
+#g2_t8_5 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 1.5vw;
+}
+#g2_t8_6 {
+	transform: translateZ(85px) scale(0.7875);
+	margin-left: -1vw;
+}
+
+/*GROUP 3 - A PARTICULARLY SPECIAL NIGHT*/
+#g3_t9_1 {
+	transform: translateZ(75px) scale(0.8125);
+	margin-left: 9vw;
+}
+#g3_t9_2 {
+	transform: translateZ(95px) scale(0.7625);
+	margin-left: 1vw;
+}
+#g3_t9_3 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: -3vw;
+}
+#g3_t9_4 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: 0vw;
+}
+/*WIND UP WANDERING OUT*/
+#g3_t10_1 {
+	transform: translateZ(95px) scale(0.75);
+	margin-left: 10vw;
+}
+#g3_t10_2 {
+	transform: translateZ(75px) scale(0.8125);
+	margin-left: -2vw;
+}
+#g3_t10_3 {
+	transform: translateZ(110px) scale(0.775);
+	margin-left: 1vw;
+}
+#g3_t10_4 {
+	transform: translateZ(90px) scale(0.8);
+	margin-left: -2vw;
+}
+/*TRY TO REMEMBER THIS MOMENT*/
+#g3_t11_1 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: 10vw;
+}
+#g3_t11_2 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: -1vw;
+}
+#g3_t11_3 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 1.5vw;
+}
+#g3_t11_4 {
+	transform: translateZ(110px) scale(0.725);
+	margin-left: -2vw;
+}
+#g3_t11_5 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: -1vw;
+}
+/*AND A PHOTO WAS BORN*/
+#g3_t12_1 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 10vw;
+}
+#g3_t12_2 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: -1.5vw;
+}
+#g3_t12_3 {
+	transform: translateZ(105px) scale(0.7375);
+	margin-left: 3vw;
+}
+#g3_t12_4 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: -2vw;
+}
+#g3_t12_5 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 0vw;
+}
+
+/*GROUP 4 - SO IS THIS WHAT A PHOTO IS*/
+#g4_t13_1 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 12vw;
+}
+#g4_t13_2 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: -1vw;
+}
+#g4_t13_3 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: -2vw;
+}
+#g4_t13_4 {
+	transform: translateZ(85px) scale(0.7875);
+	margin-left: 1vw;
+}
+#g4_t13_5 {
+	transform: translateZ(60px) scale(0.85);
+	margin-left: -1vw;
+}
+#g4_t13_6 {
+	transform: translateZ(105px) scale(0.7375);
+	margin-left: 2vw;
+}
+#g4_t13_7 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: -1vw;
+}
+/*MAYBE ITS NOT WHAT YOU THOUGHT*/
+#g4_t14_1 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: 10vw;
+}
+#g4_t14_2 {
+	transform: translateZ(95px) scale(0.7625);
+	margin-left: 1vw;
+}
+#g4_t14_3 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: -1vw;
+}
+#g4_t14_4 {
+	transform: translateZ(85px) scale(0.7875);
+	margin-left: 1vw;
+}
+#g4_t14_5 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: 0vw;
+}
+#g4_t14_6 {
+	transform: translateZ(105px) scale(0.7375);
+	margin-left: -1vw;
+}
+/*BUT THIS MAY NOT BE THE ONE ANSWER*/
+#g4_t15_1 {
+	transform: translateZ(60px) scale(0.85);
+	margin-left: 8vw;
+}
+#g4_t15_2 {
+	transform: translateZ(105px) scale(0.7375);
+	margin-left: 4.5vw;
+}
+#g4_t15_3 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: -2vw;
+}
+#g4_t15_4 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: -1vw;
+}
+#g4_t15_5 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 1vw;
+}
+#g4_t15_6 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: 0vw;
+}
+#g4_t15_7 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 0vw;
+}
+#g4_t15_8 {
+	transform: translateZ(65px) scale(0.8375);
+	margin-left: 0vw;
+}
+/*WHATEVER IT MAY BE, WE CAN ALL AGREE*/
+#g4_t16_1 {
+	transform: translateZ(105px) scale(0.7375);
+	margin-left: 11vw;
+}
+#g4_t16_2 {
+	transform: translateZ(85px) scale(0.7875);
+	margin-left: -3vw;
+}
+#g4_t16_3 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: 0vw;
+}
+#g4_t16_4 {
+	transform: translateZ(75px) scale(0.8125);
+	margin-left: -0.5vw;
+}
+#g4_t16-2_1 {
+	transform: translateZ(100px) scale(0.75);
+	margin-left: 12.5vw;
+	margin-top: -5vh;
+}
+#g4_t16-2_2 {
+	transform: translateZ(90px) scale(0.775);
+	margin-left: -1vw;
+	margin-top: -5vh;
+}
+#g4_t16-2_3 {
+	transform: translateZ(70px) scale(0.825);
+	margin-left: -1vw;
+	margin-top: -5vh;
+}
+#g4_t16-2_4 {
+	transform: translateZ(80px) scale(0.8);
+	margin-left: 1vw;
+	margin-top: -5vh;
+}
+/*PHOTOS ARE MAGICAL*/
+#g4_t17_1 {
+	transform: translateZ(55px) scale(0.8625);
+	margin-left: 7vw;
+}
+#g4_t17_2 {
+	transform: translateZ(50px) scale(0.875);
+	margin-left: 0vw;
+}
+#g4_t17_3 {
+	transform: translateZ(55px) scale(0.8625);
+	margin-left: 0.5vw;
+}
